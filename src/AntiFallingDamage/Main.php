@@ -19,7 +19,7 @@ class Main extends PluginBase {
 		$this->getLogger()->info(TextFormat::DARK_RED . "AntiFallingDamage disabled!");
 	}
 	
-	public function isDeathCustom(EntityDamageEvent $event) {
+	public function isAntiFallingDamage(EntityDamageEvent $event) {
 		if($cause instanceof EntityDamageEvent) {
 			if($cause->getCause() == EntityDamageEvent::CAUSE_FALL){
 					$event->setCancelled($world->getDamage());
