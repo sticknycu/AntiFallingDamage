@@ -1,0 +1,6 @@
+name: AntiFallingDamage
+main: AntiFallingDamage\Main
+version: "1.0.0"
+api: [1.13.0, 2.0.0]
+author: NycuRO
+website: https://github.com/NycuRO/AntiFallingDamage
