@@ -24,6 +24,7 @@ class Main extends PluginBase {
 		if($player instanceof Player) {
 			if($event->getCause() != EntityDamageEvent::CAUSE_VOID) {
 				$event->setCancelled();
+			}
 		}
 	}
 }
