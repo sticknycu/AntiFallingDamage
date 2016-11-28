@@ -22,7 +22,7 @@ class Main extends PluginBase {
 	public function isAntiFallingDamage(EntityDamageEvent $event) {
 		if($cause instanceof EntityDamageEvent) {
 			if($cause->getCause() == EntityDamageEvent::CAUSE_FALL){
-					$event->setCancelled($world->getDamage());
+					$event->setCancelled();
 			}
 		}
 	}
