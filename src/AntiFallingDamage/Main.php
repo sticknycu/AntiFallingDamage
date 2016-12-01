@@ -22,7 +22,7 @@ class Main extends PluginBase {
 	public function onEntityDamage(EntityDamageEvent $event) {
 		$player = $event->getEntity();
 		if($player instanceof Player) {
-			if($event->getCause() != EntityDamageEvent::CAUSE_VOID) {
+			if($event->getCause() != EntityDamageEvent::CAUSE_FALL) {
 				$event->setCancelled();
 			}
 		}
